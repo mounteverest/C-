@@ -1,0 +1,28 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int i = 36;
+		object boxed = i;
+		Console.WriteLine("the value of i : {0}", i);
+		Console.WriteLine("the value of boxed : {0}", boxed);
+		 //int j = i;
+		 // += 2;
+		 boxed = ((int) boxed) + 2;
+		Console.WriteLine("the value of i : {0}", i);
+		Console.WriteLine("the value of i : {0}", i);
+		i += 1;
+		Console.WriteLine("the value of i : {0}", i);
+		Console.WriteLine("the value of boxed : {0}", boxed);
+		int? h = null;
+		int j = i;
+		object jboxed = j;
+		Console.WriteLine("h has a value : {0} ",h.HasValue);
+		h = jboxed as int?;
+		//h = (int) jboxed;
+		Console.WriteLine("h now has a value : {0}",h.HasValue);			
+		Console.WriteLine("h now has a value : {0}",h);				
+	}
+}
