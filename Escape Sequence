@@ -1,0 +1,9 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("The\t.net\tfiddle\t\tis\t\tGood\n");
+	}
+}
