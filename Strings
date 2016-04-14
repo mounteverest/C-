@@ -1,0 +1,37 @@
+/*
+String is a Collection of Characters to form a word or a  sentence.
+String is an object and it is an Reference data type
+*/
+using System;
+					
+public class Program
+
+{//class starts
+	public static void Main()
+	{//main starts
+		
+		
+		//String declaration
+		String name = "hello welcome to c";
+		//Output the String
+		Console.WriteLine("name = {0}",name);
+		
+		//String index
+		Console.WriteLine("The 3rd index of name string is ={0}",name.IndexOf("l"));
+		// String methods
+		Console.WriteLine(name.Contains("to"));
+		Console.WriteLine(name.Length);
+		Console.WriteLine(name.LastIndexOf("o"));
+		Console.WriteLine(name.ToUpper());
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}//main ends
+
+}//class ends
