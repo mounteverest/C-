@@ -1,0 +1,20 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		
+		int number = 32;
+		char pass = 'x';
+		double average = 32314453.4268766;
+		Console.WriteLine("The int number is {0:D4}",number);
+		Console.WriteLine("The Float value is {0:F5}",average);
+		Console.WriteLine("The Character Value is {0:X}",pass);
+		Console.WriteLine("The Currency Value is {0:C}",number);
+		Console.WriteLine("The Exponential Value is {0:E}",number);
+		Console.WriteLine("{0:00000.##}",average);
+		Console.WriteLine("The Percent Value is {0:00%}",average);
+		
+	}
+}
