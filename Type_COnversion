@@ -1,0 +1,24 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		double x = 3323.56;
+		int y;
+	    y = (int)x;
+		bool a = true;
+		string name ="kk";
+		Console.WriteLine("y={0}",y);
+		Console.WriteLine("The String value of double is ={0}",x.ToString());
+		Console.WriteLine("The String value of int is ={0}",y.ToString());
+		Console.WriteLine("The String value of boolean is ={0}",a.ToString());
+		Console.WriteLine("The size of Booleans is ={0}",sizeof(bool));
+		Console.WriteLine("The size of integer is ={0}",sizeof(int));
+		Console.WriteLine("The size of float is ={0}",sizeof(float));
+		Console.WriteLine("The size of double is ={0}",sizeof(double));
+		Console.WriteLine("The size of Character is ={0}",sizeof(char));
+		//Console.WriteLine("The size of string is ={0}",sizeof(string));
+		
+	}
+};
