@@ -1,0 +1,110 @@
+/*
+
+The C# Collection classes are a set of classes designed specifically for grouping together objects and performing tasks on them. 
+A number of collection classes are available with C# and we will be looking at the key classes in this chapter.
+
+
+*/
+
+/*
+
+The syntax for creating a List<T> collection is as follows:
+
+List<type> name = new List<type>(); 
+*/
+using System;
+using System.Collections.Generic;
+					
+public class Program
+{
+	public static void Main()
+	{
+		//Declaration of List
+		List<String> name = new List<String>();
+		List<int> marks = new List<int>();
+		//List<bool> result = new List<bool>();
+		
+		// Add items to the  name List
+		name.Add("kk");
+		name.Add("jj");
+		name.Add("mm");
+		
+		//Add items to the marks list
+		marks.Add(70);
+		marks.Add(20);
+		marks.Add(100);
+		marks.Add(50);
+		
+		//To access individual item from the list
+	 	Console.WriteLine(name[2]);
+		Console.WriteLine(marks[3]);
+		Console.WriteLine();
+		
+		// To access all items in the List use for loop
+		foreach(String names in name)
+		{
+			Console.WriteLine(names);
+		}	
+	
+        Console.WriteLine("\n\n");
+		
+		//To access all the marks from the marks list
+		foreach(int final_marks in marks)
+		{
+			Console.WriteLine(final_marks);
+		}	
+	
+		//remove items from the list
+		
+		name.Remove("jj");
+		name.Insert(1,"rr");
+		name.Insert(3,"dd");
+		name.Insert(4,"bb");
+		name.Insert(5,"gg");
+		name.Sort();
+		
+		marks.Remove(60);
+		marks.Insert(2,90);
+		marks.Insert(4,60);
+		marks.Sort();
+		
+		Console.WriteLine("\n\n");
+		//acces items from the name list
+		foreach(string names in name){
+			Console.WriteLine(names);
+		}
+	  Console.WriteLine("The no.of items in the name list = {0}",name.Count);		
+	
+	Console.WriteLine();
+	
+	//Access the sorted marks from the marks List
+	foreach(int final_marks in marks)
+	{
+       Console.WriteLine(final_marks);
+		
+	}
+	
+		//to access index of the item from the list
+		
+		Console.WriteLine();
+		Console.WriteLine("Index of \"dd\" in name list = {0}",name.IndexOf("dd"));
+		Console.WriteLine("index of 90 in marks = {0}",marks.IndexOf(90));
+		//To clear the items in the List
+		//name.Clear();
+		Console.WriteLine("The no.of items in the name list = {0}",name.Count);		
+		//Console.WriteLine("names");
+		/*foreach(String names in name)
+		{
+		    Console.Write(names);
+			Console.WriteLine("The no.of items in the name list = {0}",name.Count);		
+		
+		}*/
+		for(int i =0;i<name.Count;i++)
+		{
+			
+			Console.WriteLine("name[{0}] = {1}",i,name[i]);
+			
+		}
+		
+}
+	}
