@@ -1,0 +1,22 @@
+using System;
+					
+public class Program
+{//class starts
+	public static void Main()
+	{//main starts
+		/*@ verbatim Symbol is used for better readability and to print the statement as it is 
+		to print / ans other special characters like file directory etc*/
+		
+		String directory = @" one
+		                      two
+							  three";
+		Console.WriteLine(directory+"\n");
+		String folder = @"c:/mydir/windows/desktop/bin/folder/search/";
+		Console.WriteLine(folder+"\n");
+		String words = @"/i just saw\ here and * there
+			but /n no clue \t and it
+			starts";
+		Console.WriteLine(words);
+		
+	}//main ends
+}//class ends
