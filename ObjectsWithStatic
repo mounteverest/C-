@@ -1,0 +1,50 @@
+/*
+Class
+1.class in c# means both data representation and the behaviour of the data
+2.class is a data structure that combines
+data storage+methods to manipulate the data
+3.it provides a mechanism to create user defined data types
+Encapsulation:
+enables the class to hide the implementation details to protect the application
+Abstraction:
+providing a public inteface to access the external details of the Class
+
+Component Oriented Programming:
+Adding the new component to the Existing Component
+*/
+using System;
+					
+public class Program
+	
+{
+	
+	class Contact
+	{
+	public int age;
+		public void f()
+		{
+		 age = 18;
+		}
+		
+	  public void g()
+		{
+			//int age;
+			age = 21;
+		  //Console.WriteLine("the age is {0}",age);
+			
+		}	
+	}
+	public static void Main()
+	{
+		Console.WriteLine("Hello World");
+		Contact c = new Contact();
+		Console.WriteLine("the age in Contact class is {0}",c.age);
+		c.f();
+		Console.WriteLine("the age in f method is {0}",c.age);
+		c.g();
+		Console.WriteLine("the age in g method is {0}",c.age);
+		
+	}
+	
+	
+}
