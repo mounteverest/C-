@@ -1,0 +1,21 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("Hello World");
+		int i = 11;
+		bool thenum;
+		if(i==10){
+			          thenum = true;
+	             		
+	              }
+		else{
+			
+			thenum = false;
+            }
+		
+		Console.WriteLine("The number {0} is equal to 10 is {1}",i,thenum);
+	}
+}
