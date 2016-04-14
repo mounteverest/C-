@@ -1,0 +1,32 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		string[] name;
+		name = new string[]{"kk","ll","jj"};
+		Console.WriteLine(name.Length);
+		
+		
+		string[,] books = {
+		            {"Macbeth", "Shakespear", "ID12341"},
+			    {"Before I Get Old", "Dave Marsh", "ID234234"},
+		            {"Security+", "Mike Pastore", "ID3422134"}
+			  };
+
+		//Console.WriteLine(books[2,1]);
+        string[,] address = {
+		                      
+			                  {"12","kk","dd"},
+		                      
+							    {"13","jj","mm"}
+		                      };
+	Console.WriteLine(address[1,0]);	
+    Console.WriteLine(books[2,1]);		
+	}
+		
+	
+	//Console.WriteLine(address[1,0]);
+	
+}
