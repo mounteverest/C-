@@ -1,0 +1,31 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		
+		Console.WriteLine("Are u a Major");
+		string AreUaMajor = Console.ReadLine();
+		bool? ConfirmMajor = null;
+		
+		if(AreUaMajor =="y" || ConfirmMajor == true)
+		{
+		 
+		Console.WriteLine("Major is True");
+	    }
+		else if(AreUaMajor == "n" || ConfirmMajor == false)
+		{
+		   Console.WriteLine("Major is False");
+		}
+		
+		else
+		{
+		  Console.WriteLine("Nothing is Entered");
+		
+		}
+		
+		//Console.WriteLine("Major is {0}",confirmmajor);
+  }
+	
+}
