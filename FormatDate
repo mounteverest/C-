@@ -1,0 +1,21 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+	
+	DateTime doctorAppt = new DateTime(2016,7,23,15,45,0,0);
+		Console.WriteLine(doctorAppt.ToLongDateString());
+		Console.WriteLine(doctorAppt.ToShortDateString());
+		Console.WriteLine(doctorAppt.ToLongTimeString());
+		Console.WriteLine(doctorAppt.ToShortTimeString());
+		Console.WriteLine(doctorAppt.ToString("MM/dd/yyyy"));
+		Console.WriteLine(doctorAppt.ToString("MM-dd-yy"));
+		Console.WriteLine(doctorAppt.ToString("ddd-dd-MM-yyyy"));
+		Console.WriteLine(doctorAppt.ToString("dddd-dd-MM-yyyy"));
+	
+	
+	}
+	
+}
