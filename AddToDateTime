@@ -1,0 +1,28 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+	
+	//DateTime doctorVisit = new DateTime(2016,5,24,14,30);
+		DateTime doctorVisit = new DateTime(2016,6,15,18,30,0);
+		DateTime newVisit = doctorVisit.AddDays(5);
+		Console.WriteLine("The new Appointment Date is {0}",newVisit.ToString());
+		DateTime NewAppt = doctorVisit.AddDays(-20);
+		Console.WriteLine(NewAppt.ToString());
+		DateTime NewAppt_1 = NewAppt.AddMonths(3);
+		Console.WriteLine(NewAppt_1.ToString());
+	    Console.WriteLine(NewAppt_1.AddHours(3));
+		Console.WriteLine(NewAppt_1.AddMinutes(40));
+		Console.WriteLine(doctorVisit.Day);
+		Console.WriteLine(doctorVisit.Date);
+		Console.WriteLine(doctorVisit.Hour);
+	    Console.WriteLine(doctorVisit.Month);
+		Console.WriteLine(doctorVisit.Second);
+	    Console.WriteLine(doctorVisit.Minute);
+		Console.WriteLine(doctorVisit.Millisecond);
+		Console.WriteLine(doctorVisit.Year);
+	
+	}
+}
