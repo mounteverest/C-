@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;					
+public class Program
+{
+	public static void Main()
+	{
+		String colors = "red,green,blue,white,orange,black";
+		List<int> markList= new List<int>();
+		markList.Add(12);
+		markList.Add(77);
+		markList.Add(30);
+		markList.Add(40);
+		markList.Add(90);
+		String marks = "10,40";
+		String[] mycolors = colors.Split(',');
+		foreach(String color in mycolors)
+		{
+			Console.WriteLine(color);
+		}
+		
+		Console.WriteLine();
+		markList.Sort();
+		Console.WriteLine(markList.Count+"\n");
+		foreach(int subjects in markList)
+		{
+			
+			Console.WriteLine(subjects);
+		}	
+		
+		Console.WriteLine();
+		String[] mymarks = marks.Split(',');
+		foreach(String mark in mymarks)
+		
+		{
+			Console.WriteLine(mark);
+		}	
+		
+	}
+}
