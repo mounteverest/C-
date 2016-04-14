@@ -1,0 +1,27 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		
+		String MyName = "  Hello World ";
+		Console.WriteLine(MyName);
+		Console.WriteLine(MyName.Trim());
+		Console.WriteLine(MyName.Contains("e"));
+		Console.WriteLine(MyName.Trim().EndsWith("o"));
+		Console.WriteLine(MyName.GetType());
+		Console.WriteLine(MyName.IndexOf("H"));
+		Console.WriteLine(MyName.Insert(5,"s"));
+		Console.WriteLine(MyName.GetTypeCode());
+		Console.WriteLine(MyName.LastIndexOf("l"));
+		Console.WriteLine(MyName.Trim().PadLeft(10,'*'));
+		Console.WriteLine(MyName.Trim().PadRight(20,'#'));
+		String RepName  = MyName.Trim().Replace("Hello","Welcome");
+		Console.WriteLine(RepName);
+		
+		
+		
+		
+	}
+}
